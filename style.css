@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* configurando o body por inteiro */
+body{
+    /* configurando a letra */
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /* configurando a cor e a imagem de fuundo*/
+    background: #fff url("fundo.png") repeat-x;
+}
+/* limitando e configurando area do conteudo */
+#container {
+    /* aqui sera o limite aonde o "container" ficara */
+    /* largura */
+    width: 750px;
+    /* margem */
+    margin: 0 auto;
+   
+}
+
+/* configurando o topo do site */
+#topo{
+    /* altura */
+    height: 150px;
+    /* configurando imagem de fundo */
+    background: url("detalhe-topo.png") no-repeat right top;
+    /* definindo as distancias entre elemento e borda */
+    padding-top: 25px;
+    
+}
+/* Configurando titulo */
+.logo{
+    /* Largura */
+    width: 152px;
+    /* altura */
+    height: 66px;
+    /* configurando a imagem de fundo */
+    background: url("logo.png");
+}
+
+/* Configurando as UL*/
+a:link, a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+a:hover {
+    color: #e50040;
+}
+ul{
+    /* Configurando a margem */
+    margin: 0;
+    /* Configurando a distancia entre a margem */
+    padding: 0;
+    /* Configurando o estilo da lista */
+    list-style: none;
+}
+
+/* Configurando a barra de navegação "TOPO"*/
+#topo ul {
+    /* Configurando a margem superior */
+    margin-top: 30px;
+    /* Configurando o fundo da lista */
+    background: #b10333;
+    /* flutua os valores para a esquerda */
+    float: left;
+
+}
+/* configurando os valores da barra de navegação "TOPO" */
+#topo ul li{
+     /* flutua os valores para a esquerda */
+    float: left;
+}
+/* configurando os links da barra de navegação "TOPO" */
+#topo ul a{
+    /* aumenta o tamanho da letra*/
+    font-size: 0.9em;
+    /* faz os valores do link serem redenrizados como bloco */
+    display: block;
+    /* Configurando a distancia entre a margem */
+    padding: 0.5em 1.5em;
+    /* Configurando a altura da linha*/
+    line-height: 2.1em;
+    /* Configurando a cor dos links */
+    text-decoration: none;
+    /* Cor do texto */
+    color: #fff;
+    /* Configurando o divisor dos nomes */
+    background: url("divisor.png") no-repeat left center;
+}
+
+/* configurando o primeiro link para remover a seta do divisor*/
+#topo ul .primeiro a{
+    /* Removendo o background */
+    background: none;
+}
+/* configurando o a cor quando se passar com o mouse por cima*/
+#topo ul a:hover{
+    color: black;
+}
+/* Vai ficar selecionado a aba que você selecionou*/
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.fotos #navegacao a#fotos
+{
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+
+                        /* configurando o corpo do site*/
+
+/* configurando o background do site*/     
+#conteudo{
+    margin-top: 60px;
+    background: #f5f5f5;
+}
+/* configurando a area lateral*/
+#lateral{
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+  
+}
+/* configurando a area do conteudo primario */
+#tres-colunas #primario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+
+#duas-colunas #primario{
+    width: 555px;
+    float: left;
+}
+
+#uma-coluna #primario{
+    width: 750px;
+    float: left;
+}
+/* configurando a area do conteudo secundario*/
+#secundario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+
+
+
+
+/* Criando a caixa */
+.caixa{
+    margin: 10px 0;
+    padding: 5px 0;
+    background: #f3f3f3 url(fundo-caixa.png);
+}
+
+h2 {
+    font-size: 1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+}
+
+.caixa-conteudo {
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+
+/* Formatar menus laterais */
+#lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+
+}
+#lateral ul a:hover {
+    background: #f9f9f9 url("marcador.png") no-repeat left center;
+    color: #a1a1a1;
+    padding-left: 20px;
+}
+
+/* Formatando formulários*/
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+
+input.submit {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+
+/*Formatando imagens*/
+
+img{
+    border: 2px solid #dfdfdf;
+}
+
+img.imagem-principal{
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3{
+    background: #b10333;
+    color: #fff;
+}
+
+.entrevista h3{
+    background: #de003e;
+    color: #fff;
+}
+
+/*Formatando lista de noticias*/
+#lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 65px;
+}
+
+#lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+#lista-noticias li a {
+    text-decoration: none;
+   
+}
+
+#lista-noticias li a h3{
+   font-size: 0.8em;
+   padding: 0;
+   color: #3e7ab9;
+}
+
+#lista-noticias li a p{
+    font-size: 0.8em;
+    color: #000;
+}
+
+#lista-noticias li:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+/*Rodape*/
+#container-rodape {
+    background: #294c71;
+    padding: 20px;
+}
+
+#rodape {
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+
+
